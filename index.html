@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الموقع الشخصي</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>tailwind.config={theme:{extend:{colors:{primary:'#3b82f6',secondary:'#10b981'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <style>
+        :where([class^="ri-"])::before { content: "\f3c2"; }
+        body {
+            font-family: 'Tajawal', sans-serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(16, 185, 129, 0.1) 100%);
+        }
+        .custom-shadow {
+            box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.1), 0 8px 10px -6px rgba(16, 185, 129, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Header -->
+    <header class="w-full bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="text-2xl font-['Pacifico'] text-primary">logo</a>
+            <nav class="hidden md:flex items-center space-x-1 space-x-reverse">
+                <a href="#home" class="px-4 py-2 font-medium hover:text-primary transition-colors">الرئيسية</a>
+                <a href="#about" class="px-4 py-2 font-medium hover:text-primary transition-colors">عني</a>
+                <a href="#skills" class="px-4 py-2 font-medium hover:text-primary transition-colors">مهاراتي</a>
+                <a href="#portfolio" class="px-4 py-2 font-medium hover:text-primary transition-colors">أعمالي</a>
+                <a href="#contact" class="px-4 py-2 font-medium hover:text-primary transition-colors">تواصل معي</a>
+            </nav>
+            <button class="md:hidden w-10 h-10 flex items-center justify-center">
+                <i class="ri-menu-line text-xl"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="py-16 md:py-24 hero-gradient">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center gap-10">
+                <div class="md:w-1/2 text-center md:text-right">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">مرحباً، أنا <span class="text-primary">أحمد رمضان</span></h1>
+                    <p class="text-lg text-gray-600 mb-8">مطور ويب ومصمم واجهات مستخدم مبدع، أسعى لتقديم تجارب رقمية استثنائية</p>
+                    <div class="flex flex-wrap gap-4 justify-center md:justify-start">
+                        <a href="#contact" class="bg-primary text-white px-6 py-3 !rounded-button whitespace-nowrap font-medium hover:bg-primary/90 transition-colors">تواصل معي</a>
+                        <a href="#portfolio" class="bg-white border border-gray-300 px-6 py-3 !rounded-button whitespace-nowrap font-medium hover:bg-gray-50 transition-colors">معرض أعمالي</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center md:justify-end">
+                    <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden custom-shadow border-4 border-white">
+                        <img src="https://scontent.fcai19-3.fna.fbcdn.net/v/t39.30808-1/410556037_1466757220864590_7000622726432987754_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=108&ccb=1-7&_nc_sid=1d2534&_nc_ohc=Edx3tvcGPj8Q7kNvwH8yqjB&_nc_oc=Adm05mWkGHH1cgIx8FyLXKkJVyk_VEUkclCezPp7xGRSdUwOrIIAFu54ACyf0eh-EHc&_nc_zt=24&_nc_ht=scontent.fcai19-3.fna&_nc_gid=i5odb7aZg6qSk5V7l7MUew&oh=00_AfIcO1iIkexTSGUGhJSRWxBTeVETcWiEcYbrBxBel8ol0A&oe=6822E524" alt="صورة شخصية" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-2">من أنا</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+            </div>
+            <div class="flex flex-col md:flex-row gap-10 items-center">
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-bold mb-4">مطور ويب ومصمم واجهات مستخدم</h3>
+                    <p class="text-gray-600 mb-4">أنا مطور ويب شغوف بإنشاء تجارب رقمية مميزة. أمتلك خبرة واسعة في تطوير مواقع الويب وتصميم واجهات المستخدم، مع التركيز على تقديم حلول مبتكرة تلبي احتياجات العملاء.</p>
+                    <p class="text-gray-600 mb-6">أسعى دائماً لتطوير مهاراتي ومواكبة أحدث التقنيات في مجال تطوير الويب، مما يمكنني من تقديم أفضل الحلول التقنية والتصميمية.</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="flex items-center gap-2">
+                            <div class="w-8 h-8 flex items-center justify-center text-primary">
+                                <i class="ri-user-3-line"></i>
+                            </div>
+                            <div>
+                                <span class="font-medium">الاسم:</span> أحمد رمضان
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-8 h-8 flex items-center justify-center text-primary">
+                                <i class="ri-mail-line"></i>
+                            </div>
+                            <div>
+                                <span class="font-medium">البريد:</span> ahmed@example.com
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-8 h-8 flex items-center justify-center text-primary">
+                                <i class="ri-phone-line"></i>
+                            </div>
+                            <div>
+                                <span class="font-medium">الهاتف:</span> 01091889366
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-8 h-8 flex items-center justify-center text-primary">
+                                <i class="ri-map-pin-line"></i>
+                            </div>
+                            <div>
+                                <span class="font-medium">الموقع:</span> المنصورة
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-white p-6 rounded shadow-md hover:shadow-lg transition-shadow">
+                            <div class="w-14 h-14 flex items-center justify-center bg-primary/10 text-primary rounded-full mb-4">
+                                <i class="ri-code-line text-2xl"></i>
+                            </div>
+                            <h4 class="text-xl font-bold mb-2">تطوير الويب</h4>
+                            <p class="text-gray-600">تطوير مواقع ويب تفاعلية وسريعة الاستجابة باستخدام أحدث التقنيات.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded shadow-md hover:shadow-lg transition-shadow">
+                            <div class="w-14 h-14 flex items-center justify-center bg-primary/10 text-primary rounded-full mb-4">
+                                <i class="ri-layout-line text-2xl"></i>
+                            </div>
+                            <h4 class="text-xl font-bold mb-2">تصميم واجهات</h4>
+                            <p class="text-gray-600">تصميم واجهات مستخدم جذابة وسهلة الاستخدام تعزز تجربة المستخدم.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded shadow-md hover:shadow-lg transition-shadow">
+                            <div class="w-14 h-14 flex items-center justify-center bg-primary/10 text-primary rounded-full mb-4">
+                                <i class="ri-smartphone-line text-2xl"></i>
+                            </div>
+                            <h4 class="text-xl font-bold mb-2">تطبيقات الموبايل</h4>
+                            <p class="text-gray-600">تطوير تطبيقات موبايل متعددة المنصات تعمل بكفاءة على جميع الأجهزة.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded shadow-md hover:shadow-lg transition-shadow">
+                            <div class="w-14 h-14 flex items-center justify-center bg-primary/10 text-primary rounded-full mb-4">
+                                <i class="ri-search-line text-2xl"></i>
+                            </div>
+                            <h4 class="text-xl font-bold mb-2">تحسين محركات البحث</h4>
+                            <p class="text-gray-600">تحسين ظهور المواقع في نتائج البحث لزيادة الوصول والانتشار.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-2">مهاراتي</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6">المهارات التقنية</h3>
+                    <div class="space-y-5">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">HTML/CSS</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-primary h-2 rounded-full" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">JavaScript</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-primary h-2 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">React</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-primary h-2 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Node.js</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-primary h-2 rounded-full" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">UI/UX Design</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-primary h-2 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold mb-6">المهارات الشخصية</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-white p-5 rounded shadow-sm">
+                            <div class="flex items-center gap-3 mb-2">
+                                <div class="w-10 h-10 flex items-center justify-center bg-primary/10 text-primary rounded-full">
+                                    <i class="ri-team-line"></i>
+                                </div>
+                                <h4 class="font-bold">العمل الجماعي</h4>
+                            </div>
+                            <p class="text-gray-600 text-sm">القدرة على العمل بفعالية ضمن فريق وتحقيق أهداف مشتركة.</p>
+                        </div>
+                        <div class="bg-white p-5 rounded shadow-sm">
+                            <div class="flex items-center gap-3 mb-2">
+                                <div class="w-10 h-10 flex items-center justify-center bg-primary/10 text-primary rounded-full">
+                                    <i class="ri-chat-1-line"></i>
+                                </div>
+                                <h4 class="font-bold">التواصل</h4>
+                            </div>
+                            <p class="text-gray-600 text-sm">مهارات تواصل ممتازة تساعد في فهم متطلبات العملاء بدقة.</p>
+                        </div>
+                        <div class="bg-white p-5 rounded shadow-sm">
+                            <div class="flex items-center gap-3 mb-2">
+                                <div class="w-10 h-10 flex items-center justify-center bg-primary/10 text-primary rounded-full">
+                                    <i class="ri-time-line"></i>
+                                </div>
+                                <h4 class="font-bold">إدارة الوقت</h4>
+                            </div>
+                            <p class="text-gray-600 text-sm">القدرة على إدارة المشاريع وتسليمها في الوقت المحدد.</p>
+                        </div>
+                        <div class="bg-white p-5 rounded shadow-sm">
+                            <div class="flex items-center gap-3 mb-2">
+                                <div class="w-10 h-10 flex items-center justify-center bg-primary/10 text-primary rounded-full">
+                                    <i class="ri-lightbulb-line"></i>
+                                </div>
+                                <h4 class="font-bold">حل المشكلات</h4>
+                            </div>
+                            <p class="text-gray-600 text-sm">القدرة على تحليل المشكلات وإيجاد حلول مبتكرة وفعالة.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-2">أعمالي</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">مجموعة مختارة من أحدث مشاريعي التي تعكس مهاراتي وخبراتي في مجال تطوير الويب وتصميم واجهات المستخدم.</p>
+            </div>
+
+            <div class="mb-8 flex justify-center">
+                <div class="inline-flex p-1 bg-gray-100 rounded-full">
+                    <button class="px-4 py-2 rounded-full bg-primary text-white whitespace-nowrap">جميع المشاريع</button>
+                    <button class="px-4 py-2 rounded-full text-gray-700 hover:bg-gray-200 whitespace-nowrap">تطوير الويب</button>
+                    <button class="px-4 py-2 rounded-full text-gray-700 hover:bg-gray-200 whitespace-nowrap">تصميم واجهات</button>
+                    <button class="px-4 py-2 rounded-full text-gray-700 hover:bg-gray-200 whitespace-nowrap">تطبيقات الموبايل</button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white rounded overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                    <div class="h-56 overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=modern%20responsive%20website%20design%2C%20clean%20interface%2C%20professional%20business%20website%2C%20blue%20and%20white%20color%20scheme%2C%20minimalist%20design&width=600&height=400&seq=1&orientation=landscape" alt="تصميم موقع شركة" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">موقع شركة تقنية</h3>
+                        <p class="text-gray-600 mb-4">تصميم وتطوير موقع ويب متجاوب لشركة تقنية مع واجهة مستخدم سهلة الاستخدام.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">HTML</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">CSS</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">JavaScript</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">React</span>
+                        </div>
+                        <a href="#" class="text-primary font-medium hover:underline">عرض المشروع</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                    <div class="h-56 overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=e-commerce%20mobile%20app%20interface%2C%20product%20listing%20page%2C%20shopping%20cart%2C%20modern%20UI%20design%2C%20clean%20layout&width=600&height=400&seq=2&orientation=landscape" alt="تطبيق تسوق إلكتروني" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">تطبيق تسوق إلكتروني</h3>
+                        <p class="text-gray-600 mb-4">تطوير تطبيق موبايل للتسوق الإلكتروني مع واجهة سهلة الاستخدام ونظام دفع آمن.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">React Native</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Firebase</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Node.js</span>
+                        </div>
+                        <a href="#" class="text-primary font-medium hover:underline">عرض المشروع</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                    <div class="h-56 overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=dashboard%20UI%20design%2C%20analytics%20dashboard%2C%20data%20visualization%2C%20charts%20and%20graphs%2C%20modern%20interface%20with%20blue%20accent%20colors&width=600&height=400&seq=3&orientation=landscape" alt="لوحة تحكم تحليلية" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">لوحة تحكم تحليلية</h3>
+                        <p class="text-gray-600 mb-4">تصميم وتطوير لوحة تحكم تحليلية لعرض البيانات وتحليلها بطريقة سهلة ومرئية.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Vue.js</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">D3.js</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Express</span>
+                        </div>
+                        <a href="#" class="text-primary font-medium hover:underline">عرض المشروع</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                    <div class="h-56 overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=educational%20platform%20interface%2C%20online%20learning%20website%2C%20course%20listing%2C%20video%20player%2C%20modern%20and%20clean%20design&width=600&height=400&seq=4&orientation=landscape" alt="منصة تعليمية" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">منصة تعليمية</h3>
+                        <p class="text-gray-600 mb-4">تطوير منصة تعليمية متكاملة مع نظام إدارة محتوى ونظام إدارة تعلم.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">React</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Node.js</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">MongoDB</span>
+                        </div>
+                        <a href="#" class="text-primary font-medium hover:underline">عرض المشروع</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                    <div class="h-56 overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=social%20media%20app%20interface%2C%20user%20profile%20page%2C%20feed%20design%2C%20messaging%20feature%2C%20modern%20mobile%20app%20UI&width=600&height=400&seq=5&orientation=landscape" alt="تطبيق تواصل اجتماعي" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">تطبيق تواصل اجتماعي</h3>
+                        <p class="text-gray-600 mb-4">تصميم وتطوير تطبيق تواصل اجتماعي مع ميزات مشاركة المحتوى والتفاعل.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Flutter</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Firebase</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">GraphQL</span>
+                        </div>
+                        <a href="#" class="text-primary font-medium hover:underline">عرض المشروع</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                    <div class="h-56 overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=restaurant%20website%20design%2C%20food%20menu%20page%2C%20reservation%20system%2C%20elegant%20and%20appetizing%20design%2C%20high-quality%20food%20photography&width=600&height=400&seq=6&orientation=landscape" alt="موقع مطعم" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">موقع مطعم</h3>
+                        <p class="text-gray-600 mb-4">تصميم وتطوير موقع ويب لمطعم مع نظام حجز طاولات وعرض قائمة الطعام.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">HTML</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">CSS</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">JavaScript</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">PHP</span>
+                        </div>
+                        <a href="#" class="text-primary font-medium hover:underline">عرض المشروع</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-10">
+                <a href="#" class="inline-block bg-white border border-primary text-primary px-6 py-3 !rounded-button whitespace-nowrap font-medium hover:bg-primary/5 transition-colors">عرض المزيد من المشاريع</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-2">آراء العملاء</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">ما يقوله العملاء عن تجربتهم في العمل معي وعن جودة الخدمات التي أقدمها.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded shadow-md">
+                    <div class="flex text-primary mb-4">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6">"تعاملت مع أحمد في تطوير موقع الويب الخاص بشركتنا، وكانت تجربة رائعة. فهم احتياجاتنا بسرعة وقدم حلولاً مبتكرة تجاوزت توقعاتنا. سأتعامل معه مرة أخرى بكل تأكيد."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full overflow-hidden bg-gray-200 flex items-center justify-center text-gray-500">
+                            <i class="ri-user-3-line"></i>
+                        </div>
+                        <div class="mr-3">
+                            <h4 class="font-bold">محمد العبدالله</h4>
+                            <p class="text-sm text-gray-600">المدير التنفيذي، شركة تقنية المستقبل</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded shadow-md">
+                    <div class="flex text-primary mb-4">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6">"أحمد مطور محترف ومبدع. ساعدنا في تطوير تطبيق الهاتف المحمول الخاص بنا، وكان العمل معه ممتعاً. يتميز بالالتزام بالمواعيد والجودة العالية في العمل. أنصح بالتعامل معه."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full overflow-hidden bg-gray-200 flex items-center justify-center text-gray-500">
+                            <i class="ri-user-3-line"></i>
+                        </div>
+                        <div class="mr-3">
+                            <h4 class="font-bold">سارة الأحمد</h4>
+                            <p class="text-sm text-gray-600">مديرة المنتجات، شركة تطبيقات ذكية</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded shadow-md">
+                    <div class="flex text-primary mb-4">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-fill"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6">"تعاونت مع أحمد في تصميم واجهة المستخدم لمنصتنا التعليمية، وكانت النتائج مذهلة. يتميز بفهم عميق لاحتياجات المستخدم وقدرة على ترجمتها إلى تصاميم جذابة وسهلة الاستخدام."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full overflow-hidden bg-gray-200 flex items-center justify-center text-gray-500">
+                            <i class="ri-user-3-line"></i>
+                        </div>
+                        <div class="mr-3">
+                            <h4 class="font-bold">خالد السعيد</h4>
+                            <p class="text-sm text-gray-600">مؤسس، أكاديمية التعلم الرقمي</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-2">تواصل معي</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">هل لديك مشروع تود مناقشته؟ أنا متاح للعمل على مشاريع جديدة ومثيرة. تواصل معي وسأرد عليك في أقرب وقت ممكن.</p>
+            </div>
+
+            <div class="flex flex-col md:flex-row gap-10">
+                <div class="md:w-1/3">
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 flex items-center justify-center bg-primary/10 text-primary rounded-full flex-shrink-0">
+                                <i class="ri-map-pin-line"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">الموقع</h4>
+                                <p class="text-gray-600">المنصورة</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 flex items-center justify-center bg-primary/10 text-primary rounded-full flex-shrink-0">
+                                <i class="ri-mail-line"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">البريد الإلكتروني</h4>
+                                <p class="text-gray-600">ahmed@example.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 flex items-center justify-center bg-primary/10 text-primary rounded-full flex-shrink-0">
+                                <i class="ri-phone-line"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">الهاتف</h4>
+                                <p class="text-gray-600">01091889366</p>
+                            </div>
+                        </div>
+                        <div class="pt-4">
+                            <h4 class="font-bold text-lg mb-3">تابعني على</h4>
+                            <div class="flex gap-3">
+                                <a href="https://www.facebook.com/share/1APTp6Fs97/" class="w-10 h-10 flex items-center justify-center bg-gray-100 text-gray-700 rounded-full hover:bg-primary hover:text-white transition-colors">
+                                    <i class="ri-facebook-line"></i>
+                                </a>
+                                <a href="https://wa.me/qr/NDCARXYPZ5FSP1" class="w-10 h-10 flex items-center justify-center bg-gray-100 text-gray-700 rounded-full hover:bg-primary hover:text-white transition-colors">
+                                    <i class="ri-whatsapp-line"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-100 text-gray-700 rounded-full hover:bg-primary hover:text-white transition-colors">
+                                    <i class="ri-github-line"></i>
+                                </a>
+                                <a href="https://www.instagram.com/eng_a7med_ra?igsh=azE4eGVrZHZheW9w" class="w-10 h-10 flex items-center justify-center bg-gray-100 text-gray-700 rounded-full hover:bg-primary hover:text-white transition-colors">
+                                    <i class="ri-instagram-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-2/3">
+                    <form class="bg-white p-6 rounded shadow-md">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label for="name" class="block text-gray-700 font-medium mb-2">الاسم</label>
+                                <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary" placeholder="أدخل اسمك">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 font-medium mb-2">البريد الإلكتروني</label>
+                                <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary" placeholder="أدخل بريدك الإلكتروني">
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <label for="subject" class="block text-gray-700 font-medium mb-2">الموضوع</label>
+                            <input type="text" id="subject" class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary" placeholder="أدخل موضوع الرسالة">
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 font-medium mb-2">الرسالة</label>
+                            <textarea id="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary" placeholder="اكتب رسالتك هنا"></textarea>
+                        </div>
+                        <button type="submit" class="bg-primary text-white px-6 py-3 !rounded-button whitespace-nowrap font-medium hover:bg-primary/90 transition-colors"> <a href="https://wa.me/qr/NDCARXYPZ5FSP1">إرسال </a></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <a href="#" class="text-2xl font-['Pacifico'] text-white">logo</a>
+                    <p class="mt-2 text-gray-400 max-w-md">مطور ويب ومصمم واجهات مستخدم مبدع، أسعى لتقديم تجارب رقمية استثنائية تلبي احتياجات العملاء وتتجاوز توقعاتهم.</p>
+                </div>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="#home" class="text-gray-400 hover:text-white transition-colors">الرئيسية</a>
+                    <a href="#about" class="text-gray-400 hover:text-white transition-colors">عني</a>
+                    <a href="#skills" class="text-gray-400 hover:text-white transition-colors">مهاراتي</a>
+                    <a href="#portfolio" class="text-gray-400 hover:text-white transition-colors">أعمالي</a>
+                    <a href="#contact" class="text-gray-400 hover:text-white transition-colors">تواصل معي</a>
+                </div>
+            </div>
+            <hr class="border-gray-700 my-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">© 2025 جميع الحقوق محفوظة. تم التصميم بواسطة أحمد محمد</p>
+                <div class="flex gap-3 mt-4 md:mt-0">
+                    <a href="#" class="w-8 h-8 flex items-center justify-center bg-gray-700 text-gray-400 rounded-full hover:bg-primary hover:text-white transition-colors">
+                        <i class="ri-twitter-x-line"></i>
+                    </a>
+                    <a href="#" class="w-8 h-8 flex items-center justify-center bg-gray-700 text-gray-400 rounded-full hover:bg-primary hover:text-white transition-colors">
+                        <i class="ri-linkedin-line"></i>
+                    </a>
+                    <a href="#" class="w-8 h-8 flex items-center justify-center bg-gray-700 text-gray-400 rounded-full hover:bg-primary hover:text-white transition-colors">
+                        <i class="ri-github-line"></i>
+                    </a>
+                    <a href="#" class="w-8 h-8 flex items-center justify-center bg-gray-700 text-gray-400 rounded-full hover:bg-primary hover:text-white transition-colors">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile menu toggle
+            const menuButton = document.querySelector('button.md\\:hidden');
+            const mobileMenu = document.createElement('div');
+            mobileMenu.className = 'fixed inset-0 bg-gray-800 bg-opacity-90 z-50 transform translate-x-full transition-transform duration-300 ease-in-out';
+            mobileMenu.innerHTML = `
+                <div class="flex justify-end p-4">
+                    <button class="text-white w-10 h-10 flex items-center justify-center">
+                        <i class="ri-close-line text-2xl"></i>
+                    </button>
+                </div>
+                <div class="flex flex-col items-center space-y-6 mt-10 text-white text-xl">
+                    <a href="#home" class="hover:text-primary transition-colors">الرئيسية</a>
+                    <a href="#about" class="hover:text-primary transition-colors">عني</a>
+                    <a href="#skills" class="hover:text-primary transition-colors">مهاراتي</a>
+                    <a href="#portfolio" class="hover:text-primary transition-colors">أعمالي</a>
+                    <a href="#contact" class="hover:text-primary transition-colors">تواصل معي</a>
+                </div>
+            `;
+            document.body.appendChild(mobileMenu);
+            
+            menuButton.addEventListener('click', function() {
+                mobileMenu.classList.remove('translate-x-full');
+            });
+            
+            mobileMenu.querySelector('button').addEventListener('click', function() {
+                mobileMenu.classList.add('translate-x-full');
+            });
+            
+            // Close mobile menu when clicking on a link
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileMenu.classList.add('translate-x-full');
+                });
+            });
+            
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
